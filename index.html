@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ViaCep</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/viacep icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div id="alertMessage"></div>
+    <main>
+      <div class="main_logo">
+        <a href="index.html"><img src="img/viacep icon.png" alt="" /></a>
+      </div>
+      <div class="main_content">
+        <div class="main_content_logo">
+          <img src="img/ViaCep Logo.svg" alt="" />
+        </div>
+        <div class="main_content_form">
+          <div class="main_content_form_welcome">
+            <h1>Bem Vindo</h1>
+            <p>
+              Explore o mundo dos CEPs de forma fácil e rápida com o ViaCep.
+              Encontre os códigos postais que você precisa em segundos, seja
+              para entregas, correspondências ou qualquer outra finalidade.
+              Simplifique suas buscas e economize tempo com nossa plataforma
+              intuitiva e confiável.
+            </p>
+          </div>
+          <form method="get" action=".">
+            <div class="main_content_form_cep">
+              <input
+                name="cep"
+                type="text"
+                id="cep"
+                value=""
+                size="10"
+                maxlength="9"
+                onblur="pesquisacep(this.value);"
+                placeholder="Digite seu CEP"
+              />
+              <div class="main_content_form_address">
+                <div>
+                  <p>Logradouro:</p>
+                  <input name="rua" type="text" id="rua" />
+                </div>
+                <div>
+                  <p>Número:</p>
+                  <input
+                    type="text"
+                    placeholder="Digite aqui o número do local"
+                    id="num"
+                  />
+                </div>
+                <div>
+                  <p>Bairro:</p>
+                  <input name="bairro" type="text" id="bairro" />
+                </div>
+                <div>
+                  <p>Cidade:</p>
+                  <input name="cidade" type="text" id="cidade" />
+                </div>
+                <div>
+                  <p>Estado:</p>
+                  <input input name="uf" type="text" id="uf" />
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="main_content_form_footer">
+            <p>viacep@brasil.com</p>
+            <p>123-456-7890</p>
+            <div class="main_content_form_footer_imgs">
+              <a href="https://www.instagram.com/" target="_blank">
+                <img src="img/instagram logo.svg" alt="" />
+              </a>
+              <a href="https://twitter.com/" target="_blank">
+                <img src="img/twitter logo.svg" alt="" />
+              </a>
+              <a href="https://web.whatsapp.com/" target="_blank">
+                <img src="img/Whatsapp logo.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
